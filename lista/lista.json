@@ -1,19 +1,23 @@
 [
     {
         "produto": "Picanha",
-        "id": 1
+        "id": 1,
+        "imagem":"https://github.com/munifgebara/reactnative/raw/master/imagens/picanha.jpg"
     },
     {
         "produto": "Carvão",
-        "id": 2
+        "id": 2,
+        "imagem":"https://github.com/munifgebara/reactnative/raw/master/imagens/carvao.jpg"
     },
     {
         "produto": "Cerveja",
-        "id": 3
+        "id": 3,
+        "imagem":"https://github.com/munifgebara/reactnative/raw/master/imagens/cerveja.jpg"
     },
     {
         "produto": "Farofa",
-        "id": 4
+        "id": 4,
+        "imagem":"https://github.com/munifgebara/reactnative/raw/master/imagens/farofa.jpg"
     }
 
 ]
