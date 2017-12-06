@@ -1,0 +1,5 @@
+export ANDROID_HOME=/Users/munif/Library/Android/sdk
+
+
+/Users/munif/Library/Android/sdk/tools/emulator @Nexus_5X_API_25
+
