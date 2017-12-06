@@ -11,12 +11,16 @@ class ListaCoisas extends Component {
         this.carregaLista();
     }
 
+    renderCoisa(){
+        return this.state.lista.map(coisa => <Text key={coisa.produto}>{coisa.produto}</Text>);
+    }
+
     render() {
         console.log('ListaCoisas.render()');
         console.log('ListaCoisas.state',this.state);
         return (
             <View>
-                <Text>Lista de Coisas</Text>
+                {this.renderCoisa()}
             </View>
         );
     }

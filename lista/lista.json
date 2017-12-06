@@ -1,0 +1,15 @@
+[
+    {
+        "produto": "Picanha",
+        "id": 1
+    },
+    {
+        "produto": "Carvão",
+        "id": 2
+    },
+    {
+        "produto": "Cerveja",
+        "id": 3
+    }
+
+]
