@@ -13,12 +13,11 @@ class ListaCoisas extends Component {
     }
 
     comprar(coisa) {
-        
         let l = this.state.lista.slice(0);
-        let i=l.indexOf(coisa);
-        l.splice(i,1);
+        let i = l.indexOf(coisa);
+        l.splice(i, 1);
         //alert(coisa.produto);
-        this.setState({lista:l});
+        this.setState({ lista: l });
     }
 
     renderCoisa() {
