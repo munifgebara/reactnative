@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 
 const Titulo = (props) => {
     const { estiloText, estiloView } = estilos;
-    console.log('Propriedades:',props);
+    //console.log('Propriedades:',props);
 
     return (
         <View style={estiloView}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, AppRegistry, View } from 'react-native';
 import Titulo from './src/components/titulo';
-import ListaCoisas from './src/components/lista-coisas';
+import ListaCoisas from './src/components/lista-coisas.2';
 const App = () => {
     return (
         <View>
