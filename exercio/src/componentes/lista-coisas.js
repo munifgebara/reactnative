@@ -33,6 +33,11 @@ class ListaCoisas extends Component {
 
     remove(coisa){
         console.log('Removendo',coisa);
+        let l = this.state.lista.slice(0);
+        let i=l.indexOf(coisa);
+        l.splice(i,1);
+        this.setState({lista:l});
+
     }
 
     renderCoisas() {
