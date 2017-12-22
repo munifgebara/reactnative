@@ -28,12 +28,19 @@ export default class LugaresService {
             console.log('Service ERROR', error);
             return null;
         }
+
     }
+    static newInstance() {
+        return { data: { nome: 'Novo', imagem: null } };
+    }
+
+
     static async view(id) {
         try {
             let response = await fetch(baseURL + `/${id}.json`);
             let data = await response.json();
-            return {id:id,data:data};
+            let r = { id: id, data: data };
+            return r;
         }
         catch (error) {
             console.log('Service ERROR', error);
