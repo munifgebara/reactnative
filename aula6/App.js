@@ -12,7 +12,9 @@ import {
   Text,
   View
 } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 import Login from './componentes/login';
+import Lista from './componentes/lista';
 
 
 export default class App extends Component {
@@ -29,7 +31,7 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to Aula 6!
         </Text>
-        <Login/>
+        <Lista/>
         
       </View>
     );

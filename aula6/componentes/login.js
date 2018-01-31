@@ -5,6 +5,10 @@ import { auth } from 'firebase';
 
 export default class Login extends Component {
 
+    static navigationOptions = {
+        title: 'Login'
+    }
+
     state = { login: '', senha: '', mensagem: 'inicio' };
 
     componentWillMount() {
@@ -21,11 +25,20 @@ export default class Login extends Component {
    */
 
         auth().signInWithEmailAndPassword(this.state.login, this.state.senha)
-            .then(a => { this.setState({ mensagem: 'logado' }) })
+            .then(a => { 
+                this.setState({ mensagem: 'logado' });
+                this.vaiParaLista(); 
+            })
             .catch(a => { this.setState({ mensagem: 'erro' }) });
 
     }
 
+
+    vaiParaLista() {
+        
+        const { navigate } = this.props.navigation;
+        navigate('Lista', { mensagem:'Sucesso'  });
+    }
 
     render() {
         const { containerStyle } = estilos;
